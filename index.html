@@ -1331,22 +1331,18 @@
       margin-top: 2px;
     }
 
-    .access-badge {
+    .access-map {
       flex-shrink: 0;
-      background: rgba(255,255,255,0.05);
+      width: 320px;
+      height: 240px;
+      border-radius: 6px;
+      overflow: hidden;
       border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 4px;
-      padding: 28px 32px;
-      text-align: center;
     }
-
-    .access-badge .ab-icon { font-size: 2.5rem; margin-bottom: 10px; }
-    .access-badge .ab-main { font-family: var(--font-serif); font-size: 0.95rem; color: var(--white); margin-bottom: 4px; }
-    .access-badge .ab-sub  { font-size: 0.76rem; color: rgba(255,255,255,0.4); }
 
     @media (max-width: 640px) {
       .access-inner { flex-direction: column; }
-      .access-badge { width: 100%; }
+      .access-map { width: 100%; height: 200px; }
     }
 
     /* ========================================
@@ -2030,16 +2026,16 @@
     </svg>
 
     <div class="hero-content fade-in">
-      <div class="hero-badge">✦ 初心者・未経験者 大歓迎</div>
+      <div class="hero-badge" style="color:var(--white); border-color:rgba(255,255,255,0.4); background:rgba(255,255,255,0.12);">✦ 初心者・未経験者 大歓迎</div>
       <h1 class="hero-title">
         初心者から<br />
         <em>安心して学べる</em><br />
         将棋教室
       </h1>
       <p class="hero-sub">
-        体系化されたカリキュラムで、一手一手着実に上達。<br />
-        ルールを知らなくてもはじめられます。<br />
-        未経験〜初段を目指す方を、烏丸で丁寧に指導します。
+        体系化されたカリキュラムと多世代の仲間との交流で、一手一手着実に上達。<br />
+        子どもからシニアまで、世代を超えてわいわい楽しめる将棋教室です。<br />
+        ルールを知らなくてもはじめられます。烏丸で、毎週日曜日に開講。
       </p>
       <div class="hero-actions">
         <a href="#cta" class="btn-primary">無料体験を申し込む</a>
@@ -2132,7 +2128,7 @@
             <li>
               <div class="step-num">2</div>
               <div class="step-body">
-                <div class="step-label">無料体験レッスン（約60分）</div>
+                <div class="step-label">無料体験レッスン（1日体験）</div>
                 <div class="step-note">実際の雰囲気・内容を確認できます。完全無料です</div>
               </div>
             </li>
@@ -2238,9 +2234,9 @@
 
         <div class="feature-card fade-in" style="transition-delay:0.40s">
           <div class="feature-num">06</div>
-          <span class="feature-tag">雰囲気</span>
-          <h3>少人数制で、<br />一人ひとりに目が届く</h3>
-          <p>大人数の教室とは異なり、少人数でアットホームな雰囲気を保っています。「自分だけ取り残されていないか不安」という方にこそ、合っている環境だと思っています。</p>
+          <span class="feature-tag">リクエスト制</span>
+          <h3>毎月、習いたい内容を<br />リクエストできる</h3>
+          <p>講座冒頭の解説テーマはリクエスト受付制。毎月2名ほどから「この戦法を学びたい」「この場面の考え方を教えてほしい」と声を集め、カリキュラムに反映します。教わる側が授業をつくれる教室です。</p>
         </div>
 
       </div>
@@ -2315,7 +2311,7 @@
             <li><span class="marker">✦</span><span>将棋を「ゼロから」始めたい方</span></li>
             <li><span class="marker">✦</span><span>基礎をしっかり身につけてから実戦に進みたい方</span></li>
             <li><span class="marker">✦</span><span>初段取得を一つの目標にしたい方</span></li>
-            <li><span class="marker">✦</span><span>少人数のアットホームな雰囲気を好む方</span></li>
+            <li><span class="marker">✦</span><span>習いたい内容をリクエストしながら学びたい方</span></li>
             <li><span class="marker">✦</span><span>お子様の習い事として探している保護者の方</span></li>
             <li><span class="marker">✦</span><span>趣味として将棋を楽しみたい大人の方</span></li>
           </ul>
@@ -2328,7 +2324,7 @@
           <ul class="fit-list">
             <li><span class="marker">—</span><span>有段者向けの高度な指導を求める方（初段超えの方は、別の教室をご検討ください）</span></li>
             <li><span class="marker">—</span><span>プロ棋士を目指して本格的に訓練したい方</span></li>
-            <li><span class="marker">—</span><span>振替や欠席への柔軟な対応を必要とする方（振替制度はありません）</span></li>
+            <li><span class="marker">—</span><span>欠席時の振替を必要とする方（振替はありません。都合に合わせて単発参加がおすすめです）</span></li>
           </ul>
         </div>
       </div>
@@ -2357,10 +2353,10 @@
 
         <div class="curriculum-step active">
           <div class="dot">第1期</div>
-          <h4>対振り飛車編</h4>
+          <h4>振り飛車編</h4>
           <ul>
-            <li>振り飛車の基本的な指し方</li>
-            <li>対振り飛車の囲いと戦法</li>
+            <li>三間・四間・中飛車・向かい飛車</li>
+            <li>振り飛車の囲いと攻め方</li>
             <li>3手詰・5手詰を毎回解く</li>
             <li>月末「次の一手」テスト</li>
           </ul>
@@ -2370,7 +2366,7 @@
           <div class="dot">第2期</div>
           <h4>相居飛車編</h4>
           <ul>
-            <li>矢倉・角換わりの基礎</li>
+            <li>矢倉・角換わり・相掛かり・横歩取り</li>
             <li>居飛車同士の序盤定跡</li>
             <li>3手詰・5手詰を毎回解く</li>
             <li>月末「次の一手」テスト</li>
@@ -2379,10 +2375,10 @@
 
         <div class="curriculum-step">
           <div class="dot">第3期</div>
-          <h4>振り飛車編</h4>
+          <h4>対振り飛車編</h4>
           <ul>
-            <li>四間飛車・三間飛車の指し方</li>
-            <li>振り飛車の囲いと攻め方</li>
+            <li>対抗系の基本的な指し方</li>
+            <li>対振り飛車の囲いと戦法</li>
             <li>3手詰・5手詰を毎回解く</li>
             <li>月末「次の一手」テスト</li>
           </ul>
@@ -2439,15 +2435,36 @@
         <div class="grade-note-item">
           <span class="gni-icon">⚔️</span>
           <div>
-            <strong>認定戦で昇格を判定</strong>
-            一定の実力がついた段階で認定戦を行います。対局の結果をもとに昇格を認定するため、曖昧さがありません。
+            <strong>認定戦の詳細</strong>
+            <table style="width:100%;margin-top:8px;font-size:0.8rem;border-collapse:collapse;">
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:5px 8px 5px 0;color:var(--navy);font-weight:500;">7級</td>
+                <td style="padding:5px 4px;">六枚落ち</td>
+                <td style="padding:5px 0;color:var(--muted);">受験料 1,300円</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:5px 8px 5px 0;color:var(--navy);font-weight:500;">5級</td>
+                <td style="padding:5px 4px;">四枚落ち</td>
+                <td style="padding:5px 0;color:var(--muted);">受験料 1,800円</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:5px 8px 5px 0;color:var(--navy);font-weight:500;">1級</td>
+                <td style="padding:5px 4px;">二枚落ち</td>
+                <td style="padding:5px 0;color:var(--muted);">受験料 2,200円</td>
+              </tr>
+              <tr>
+                <td style="padding:5px 8px 5px 0;color:var(--navy);font-weight:500;">初段</td>
+                <td style="padding:5px 4px;">角落ち</td>
+                <td style="padding:5px 0;color:var(--muted);">受験料 2,500円</td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="grade-note-item">
           <span class="gni-icon">📜</span>
           <div>
             <strong>認定状を発行</strong>
-            昇格のたびに認定状をお渡しします。上達の記録が形として手元に残ります。詳細な認定基準はご入会後にご案内します。
+            昇格のたびに認定状をお渡しします。上達の記録が形として手元に残ります。
           </div>
         </div>
       </div>
@@ -2546,12 +2563,12 @@
 
           <div class="lf-item active">
             <div class="lf-dot-col">
-              <div class="lf-dot">♟</div>
+              <div class="lf-dot">王</div>
             </div>
             <div class="lf-body">
               <div class="lf-time">講座後　対局タイム</div>
-              <h4>生徒同士の対局 ／ 指導対局（平手）</h4>
-              <p>講座後は生徒同士の対局か、講師との指導対局を行います。指導対局はすべて平手。ハンデなしで真剣に指すことで、実力が試され、課題が見えてきます。</p>
+              <h4>生徒同士の対局 ／ 指導対局（平手）／ 各棋戦</h4>
+              <p>講座後は生徒同士の対局か、講師との指導対局を行います。指導対局はすべて平手。また、開催時期に応じて団体戦・霞王戦などの棋戦も行います。</p>
             </div>
           </div>
 
@@ -2614,9 +2631,8 @@
               <span class="unit">円 / 月</span>
             </div>
             <ul>
-              <li>毎月の定例レッスン</li>
               <li>指導対局（平手）含む</li>
-              <li>月末テスト・対局会参加</li>
+              <li>月末テスト・対局会参加（割引あり）</li>
               <li>団体戦・霞王戦への参加権</li>
               <li>名人戦・順位戦への参加権</li>
               <li>月初現金払い（月謝袋）</li>
@@ -2656,6 +2672,7 @@
             <ul>
               <li>月謝不要・当日現金払い</li>
               <li>家族2名での参加：4,500円</li>
+              <li>対局会・指導対局・団体戦 参加可</li>
               <li>初回は<strong style="color:var(--gold)">無料体験</strong>あり</li>
             </ul>
           </div>
@@ -2735,14 +2752,15 @@
             </div>
           </div>
         </div>
-        <div class="access-badge">
-          <div class="ab-icon">🚇</div>
-          <p class="ab-main">烏丸御池駅 徒歩約5分</p>
-          <p class="ab-sub">地下鉄烏丸線・東西線</p>
-          <div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">
-            <p class="ab-main">毎週日曜日</p>
-            <p class="ab-sub">13:00 〜 16:00</p>
-          </div>
+        <div class="access-map">
+          <iframe
+            src="https://maps.google.com/maps?q=京都市中央青少年活動センター&output=embed&hl=ja"
+            style="border:0; width:100%; height:100%; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="京都市中央青少年活動センター">
+          </iframe>
         </div>
       </div>
     </div>
